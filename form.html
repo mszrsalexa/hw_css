@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Form I-130</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div id="mainbody">
+		<form>
+			<span><img src="logo.png" alt="logo" class="logo" /></span>
+			<span class="header2">
+			<h2>Petition for Alien Relative</h2><br />
+			<h4>Department of Homeland Security</h4>
+			<h5>U.S. Citizenship and Immigration Services</h5>
+			</span><span class="header3">
+				<h4>USCIS</h4>
+				<h4>Form I-30</h4>
+				<h5>OMB No. 1615-0012</h5>
+				<h5>Expires 07/31/2018</h5>
+			</span>
+			<hr size="10px" color="black" />
+			<hr size="2px" color="black" />
+
+			<div class="table1">
+				<table border="1" cellspacing="0">
+					<thead>
+					</thead>
+					<tfoot>
+					</tfoot>
+					<tbody>
+						<tr>
+							<th colspan="2" class="bg">For USCIS Use Only</th>
+							<th rowspan="4"  width="450px" class="top">Fee Stamp</th>
+							<td rowspan="7" width="300px" class="top" align="center"><b>Attachments</b>
+							<hr size="2px" color="black" />
+							<p>Petitioner's ID Document</p>
+							<input type="file" name="file" id="file" class="inputfile" />
+							<label for="file">Choose a file</label>		
+							<p>Beneficiary's ID Document</p>
+							<input type="file" name="file" id="file" class="inputfile" />
+							<label for="file">Choose a file</label>
+							<p>Your Social Security Card</p>
+							<input type="file" name="file" id="file" class="inputfile" />
+							<label for="file">Choose a file</label>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2">A-Number<br />
+							A-<input type="text" name="a-number" placeholder="12345678" maxlength="8" /></th>
+						</tr>
+						<tr>
+							<th colspan="2" align="left">Initial Receipt</th>
+						</tr>
+						<tr>
+							<th colspan="2" align="left">Resubmitted</th>
+						</tr>
+						<tr>
+							<th align="left">Relocated<br />
+							Received</th>
+							<td rowspan="3" colspan="2" align="center"><b>Section of Law/Visa Category*</b>
+							<table  width="600px" class="visasection">
+								<tbody>
+									<tr>
+										<td>
+											<label class="container">201(b) Spouse-IR-1/CR-1<input type="radio" name="tick" required="true"><span class="checkmark"></span></label>
+										</td>
+										<td>
+											<label class="container">203(a)(1) Umn. S/D-F1-1<input type="radio" name="tick" required="true"><span class="checkmark"></span></label>
+										</td>
+										<td>
+											<label class="container">203(a)(2)(B) Unm. S/D-F2-4<input type="radio" name="tick" required="true"><span class="checkmark"></span></label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label class="container">201(b) Child-IR-1/CR-1<input type="radio" name="tick" required="true"><span class="checkmark"></span></label>
+										</td>
+										<td>
+											<label class="container">203(a)(1) Spouse F2-1<input type="radio" name="tick" required="true"><span class="checkmark"></span></label>
+										</td>
+										<td>
+											<label class="container">203(a)(3) Married S/D-F3-2<input type="radio" name="tick" required="true"><span class="checkmark"></span></label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label class="container">201(b) Parent IR-5<input type="radio" name="tick" required="true"><span class="checkmark"></span></label>
+										</td>
+										<td>
+											<label class="container">203(a) Child F2-1<input type="radio" name="tick" required="true"><span class="checkmark"></span></label>
+										</td>
+										<td>
+											<label class="container">203(a) Brother/Sister F4-1<input type="radio" name="tick" required="true"><span class="checkmark"></span></label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</td>
+						</tr>
+						<tr>
+							<th align="left">Sent</th>
+						</tr>
+						<tr>
+							<th align="left">Completed</th>
+						</tr>
+						<tr>
+							<th align="left">Approved</th>
+							<td colspan="2"><label for="date" name="date">Petition was filed on (Priority Date):<b>*</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="date" name="date" id="date" required="true">
+							</td>
+							<td rowspan="2">
+							<select style="width: 200px;">
+								<option disabled="true" selected="true" value="0"><b>Choose one</b></option>
+								<option>Field Investigation</option>
+								<option>Personal Interwiew</option>
+								<option>204(a)(2)(A) Resolved</option>
+								<option>Previously Forwarded</option>
+								<option>Pet. A-File Reviewed</option>
+								<option>I-485 Filed Simultaneously</option>
+								<option>203(g) Resolved</option>
+								<option>Ben. A-File Reviewed</option>
+								<option>204(g) Resolved</option>
+							</select>
+							</td>
+						</tr>
+						<tr>
+							<th align="left">Returned</th>
+							<td colspan="2"><label for="newdate" name="date">PDR Request granted/denied - New Priority Date:<b>*</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="date" name="newdate" id="newdate" required="true">
+							</td>
+						</tr>
+						<tr>
+							<th align="left">Remarks</th>
+							<td colspan="3">
+							<textarea cols="107" name="message"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">At which USCIS office (e.g., NBC, VSC, LOS, CRO) was Form I-130 adjudicated?
+							<textarea cols="52" rows="1" name="form-i-130"></textarea>
+				  			</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<br />
+
+			<div class="table2">
+				<table border="1" cellspacing="0" >
+					<thead>
+						<tr>
+							<th colspan="4" class="bg">To be completed by attorney or accredited representative (if any)</th>
+						</tr>
+					</thead>
+					<tfoot></tfoot>
+					<tbody>
+						<tr>
+							<td>
+								<label class="cont">Select this box if Form G-28 is attached.<input type="checkbox"><span class="check"></span></label>
+							</td>
+							<td><b>Volag Number</b><br />
+							(if any)<br />
+							<input type="text" name="volagnum" size="20"></td>
+							<td><b>Attorney State No.</b><br />
+								(if applicable)<br />
+								<input type="text" name="barnum" size="20"></td>
+							<td><b>Attorney or Accredited Representative USCIS Online Account Number</b>
+								(if any)<br />
+								<input type="text" name="accnum" size="47">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<br />
+			<hr size="2px" color="black" />
+
+	<h3>Questions marked with * is required to fill out.
+		<button type="button" class="btn"><a href="instructions.html" class="instructions">INSTRUCTIONS</a></button>
+	</h3>
+
+	<span class="table3" align="left">
+		<table border="0" cellspacing="0" width="490px">
+			<thead>
+				<tr>
+					<td class="bg"><b>Part 1. Relationship</b> (You are the Petitioner. Your relative is the Beneficiary)</td>
+				</tr>
+			</thead>
+			<tfoot></tfoot>
+			<tbody>
+				<tr>
+					<td>
+						<ol>
+							<li>I am filling this petition for my:<b>*</b><br />
+								<label class="container">Spouse<input type="radio" name="beneficiary" required="true"><span class="checkmark"></span></label>
+								<label class="container">Parent<input type="radio" name="beneficiary" required="true"><span class="checkmark"></span></label>
+								<label class="container">Brother/Sister<input type="radio" name="beneficiary" required="true"><span class="checkmark"></span></label>
+								<label class="container">Child<input type="radio" name="beneficiary" required="true"><span class="checkmark"></span></label>
+							</li><br />
+							<li>If you are filling this petition for your child or parent, select the box that describes your relationship.<br >
+								<label class="container">Child was born to parents who were married to each other at the time of the child's birth<input type="radio" name="rel" ><span class="checkmark"></span></label>
+								<label class="container">Stepchild/Stepparent<input type="radio" name="rel" ><span class="checkmark"></span></label>
+								<label class="container">Child was born to parents who were not married to each other at the time of the child's birth<input type="radio" name="rel" ><span class="checkmark"></span></label>
+								<label class="container">Child was adopted (not an Orphan or Hague Convention adoptee)<input type="radio" name="rel" ><span class="checkmark"></span></label>
+							<br />
+							</li><br />
+							<li>If the beneficiary is your brother/sister, are you related by adoption?<br />
+								<label class="container">Yes<input type="radio" name="relbyadoption" ><span class="checkmark"></span></label>
+								<label class="container">No<input type="radio" name="relbyadoption" ><span class="checkmark"></span></label>
+							</li><br />
+							<li>Did you gain lawful permanent resident status or citizenship through adoption?<br />
+								<label class="container">Yes<input type="radio" name="adoption" ><span class="checkmark"></span></label>
+								<label class="container">No<input type="radio" name="adoption" ><span class="checkmark"></span></label>
+							</li><br />
+						</ol>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</span>
+
+	<span class="table4" align="left">
+			<table border="0" cellspacing="0" width="485px">
+				<thead>
+					<tr>
+						<td class="bg" colspan="3"><b>Part 2. Information about you</b> (Petitioner)</td>
+					</tr>
+				</thead>
+				<tfoot></tfoot>
+				<tbody>
+					<tr>
+						<td colspan="3">
+							<ol>
+								<li>Alien Registration Number (A-Number) (if any)<br />
+									<div align="right">
+											&Gt; <b>A-</b><input type="text" name="a-num" size="30">
+									</div>
+								</li><br />
+								<li>USCIS Online Account Number (if any)<br >
+									<div align="right">
+											&Gt;<input type="text" name="a-num" size="33">
+									</div><br />
+								</li><br />
+								<li>U.S. Social Security Number (if any)<br />
+									<div align="right">
+											&Gt;<input type="text" name="a-num" size="33">
+									</div>
+								</li><br />
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td class="bg" colspan="3"><b>Your Full Name</b></td>
+					</tr>
+					<tr width="495px">
+						<th>4.a.</th>
+						<td>Family Name (Last Name)<b>*</b></td>
+						<td><input name="familyname" type="text" size="37" required="true" /></td>
+					</tr>
+					<tr width="495px">
+						<th>4.b.</th>
+						<td>Given Name (First Name)<b>*</b></td>
+						<td><input name="firstname" type="text" size="37" required="true" /></td>
+					</tr>
+					<tr width="495px">
+						<th>4.c.</th>
+						<td>Middle Name (if any)</td>
+						<td><input name="middlename" type="text" size="37" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</span>
+		<br />
+		<input type="reset" value="Reset Form" class="btn" />
+		<input type="submit" value="Submit Form" class="btn" />
+		<br /><hr size="2px" color="black" />
+		<hr size="10px" color="black" />
+		<p>Form I-130</p>
+	</form>
+	<div id="oldalTetejere">
+		<a href="#mainbody"><img src="arrow.png" alt="arrow" id="arrow" /></a>
+	</div>	
+</div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+body, html {
+    height: 100%;
+  }
+
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("flag3.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-position: center;
+    background-attachment:fixed;
+    height: 100%; 
+}
+
+.logo {
+    width: 80px;
+}
+
+#mainbody {
+    background-color: rgba(255, 255, 255, 0.924);
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+
+.header2 {
+    width: 760px;
+    display: inline-block;
+    line-height: 0;
+    text-align: center;
+}
+.header3 {
+    display: inline-block;
+    line-height: 0;
+    text-align: center;
+    margin-right: 0;
+}
+.bg {
+    background-color: rgb(195, 195, 195);
+    border: 1px black solid;
+}
+.top {
+    vertical-align: text-top;
+}
+
+.table3, .table4, .table5 {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.btn {  
+    font-weight: bold;
+  background-color: #6b1c1c;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.instructions {
+    text-decoration: none; 
+    color: white;
+}
+
+.btn:hover {
+    opacity: 1;
+    background-color: #6b1c1c;
+}
+
+#oldalTetejere {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#arrow {
+    width: 80px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color:  #6b1c1c;
+    display: inline-block;
+    padding: 5px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    opacity: 1;
+    background-color: #6b1c1c;
+}
+
+input, textarea, select {
+    border: none;
+    background-color: rgb(206, 206, 206);
+}
+
+input:hover, input:active, textarea:hover, textarea:active, select:hover {
+    background-color: rgba(68, 68, 68, 0.863);
+    color: white;
+}
+
+::selection {
+    background-color: grey;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-size: 10pt;
+    padding-left: 25px;
+    margin-bottom: 5px;
+  }
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50%;
+  }
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 6px;
+   left: 6px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: #444;
+}
+
+/*checkbox*/
+.cont {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+.cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(206, 206, 206);
+  }
+  
+  .cont:hover input ~ .check {
+    background-color: #ccc;
+  }
+  
+  
+  .check:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .cont input:checked ~ .check:after {
+    display: block;
+  }
+  
+  .cont .check:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #444;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
